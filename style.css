@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #cce7e8;
+}
+h1{
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+.choice{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+    cursor: pointer;
+    background-color:rgb(26, 41, 2);
+}
+img{
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.score-bord{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 3rem;
+    font-size: 2rem;
+
+}
+#user-score, #comp-score, #draw-score{
+    font-size: 4rem;
+}
+#user-score{
+    color: green;
+}
+#comp-score{
+    color: red;
+}
+.score-msg{
+    font-weight: 700;
+}
+.msg-container{
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    display: inline;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#btn{
+    background-color:cornflowerblue;
+    color: #fff;
+    display: inline;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0;
+    margin-bottom: 2rem;
+    border: 2px solid transparent;
+}
+#btn:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+
+@media(max-width:600px){
+    .choices{
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        gap: 2rem;
+    }
+    .choice{
+        width: 105px;
+        height: 105px;
+    }
+    img{
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        
+    }
+    #user-score, #comp-score, #draw-score{
+        font-size: 3rem;
+    }
+    .score-bord{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 2rem;
+        font-size: 1.5rem;
+    
+    }
+    .msg-container{
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+    #msg{
+        background-color: #081b31;
+        color: #fff;
+        display: inline;
+        font-size: 1.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    #btn{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:410px){
+    h1{
+        height: 5rem;
+        line-height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .choices{
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        gap: 1.5rem;
+    }
+    .choice{
+        width: 90px;
+        height: 90px;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        
+    }
+    #msg{
+        font-size: 1rem;
+    }
+    #btn{
+        font-size: 1rem;
+    }
+}
